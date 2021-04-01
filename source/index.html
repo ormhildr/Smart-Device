@@ -4,160 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Интернет-магазин велосипедов">
-  <title>Moon: Магазин велосипедов</title>
-  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font">
-  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-700.woff2" as="font">
+  <meta name="description" content="Smart Device: умные технологии">
+  <title>Smart Device: умные технологии</title>
+  <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <div class="page-header__container container">
-      <nav class="main-nav main-nav--closed main-nav--closed-nojs main-nav--nojs">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list list">
-          <li class="main-nav__item">
-            <a href="#features">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#products">Виды велосипедов</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#preview">Видео про велосипеды</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-header__inner">
-        <div class="page-header__main">
-          <a class="page-header__logo page-header__logo--disable" href="index.html">
-            <img src="img/logo-site.svg" alt="Moon: магазин велосипедов" width="68" height="21">
-          </a>
-          <h1>Мы продаем велосипеды</h1>
-          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        </div>
-        <div class="page-header__form-wrapper form">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <div class="form__field">
-              <label class="visually-hidden" for="user-name">Имя</label>
-              <input id="user-name" type="text" placeholder="Введите Ваше Имя" inputmode="text" required>
-            </div>
-            <div class="form__field">
-              <label class="visually-hidden" for="user-phone">Номер телефона</label>
-              <input id="user-phone" type="tel" placeholder="Введите Ваш номер телефона" inputmode="tel" minlength="16"
-                required>
-            </div>
-            <button class="form__button" type="submit">Подобрать велосипед мечты</button>
-          </form>
-        </div>
-      </div>
-    </div>
   </header>
 
   <main class="page-main">
-    <section class="features" id="features">
-      <div class="features__container container">
-        <h2>Несколько фактов о нас</h2>
-        <ul class="features__list list">
-          <li class="features__item">
-            <p>Самый широкий выбор велосипедов!</p>
-          </li>
-          <li class="features__item">
-            <p>Доставка велосипедов по всей России!</p>
-          </li>
-          <li class="features__item">
-            <p>Большой выбор крутых аксессуаров!</p>
-          </li>
-          <li class="features__item">
-            <p>Профессиональные консультации!</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="products" id="products">
-      <div class="products__container container">
-        <h2>Виды велосипедов</h2>
-        <ul class="products__list list">
-          <li class="products__item products__item--roadbike">
-            <picture>
-              <source type="image/webp"
-                srcset="img/products-roadbike-desktop@1x.webp 1x, img/products-roadbike-desktop@2x.webp 2x">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/products-roadbike-desktop@1x.jpg" srcset="img/products-roadbike-desktop@2x.jpg 2x"
-                alt="Дорожный велосипед" width="342" height="503">
-            </picture>
-            <h3>Дорожный велосипед</h3>
-          </li>
-          <li class="products__item products__item--mountainbike">
-            <picture>
-              <source type="image/webp"
-                srcset="img/products-mountainbike-desktop@1x.webp 1x, img/products-mountainbike-desktop@2x.webp 2x">
-              <!-- 1х: 342px; 2x: 703px -->
-              <img src="img/products-mountainbike-desktop@1x.jpg" srcset="img/products-mountainbike-desktop@2x.jpg 2x"
-                alt="Горный велосипед" width="342" height="566">
-            </picture>
-            <h3>Горный велосипед</h3>
-          </li>
-          <li class="products__item products__item--childbike">
-            <picture>
-              <source type="image/webp"
-                srcset="img/products-childbike-desktop@1x.webp 1x, img/products-childbike-desktop@2x.webp 2x">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/products-childbike-desktop@1x.jpg" srcset="img/products-childbike-desktop@2x.jpg 2x"
-                alt="Детский велосипед" width="342" height="513">
-            </picture>
-            <h3>Детский велосипед</h3>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="preview" id="preview">
-      <div class="preview__container container">
-        <h2>Видео про велосипеды</h2>
-        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <div class="preview__video">
-          <picture>
-            <source type="image/webp"
-              srcset="img/preview-video-desktop@1x.webp 1x, img/preview-video-desktop@2x.webp 2x">
-            <!-- 1х: 929px; 2x: 1858px -->
-            <a href="">
-              <img src="img/preview-video-desktop@1x.jpg" srcset="img/preview-video-desktop@2x.jpg 2x"
-                alt="Видео про выбор велосипеда" width="929" height="522">
-            </a>
-          </picture>
-          <button class="preview__button" type="button" aria-label="Кнопка для воспроизведения видео">
-            <svg width="65" height="65">
-              <use xlink:href="img/sprite.svg#icon-play"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="contacts" id="contacts">
-    <div class="contacts__container container">
-      <h2>Как нас найти?</h2>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <picture>
-        <source type="image/webp" srcset="img/contacts-map-desktop@1x.webp 1x, img/contacts-map-desktop@2x.webp 2x">
-        <!-- 1х: 358px; 2x: 1914px -->
-        <img src="img/contacts-map-desktop@1x.jpg" srcset="img/contacts-map-desktop@2x.jpg 2x"
-          alt="Карта с нашим адресом" width="957" height="530">
-      </picture>
-      <div class="contacts__inner">
-        <a class="contacts__link contacts__link--mail"
-          href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        <a class="contacts__link contacts__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
-      </div>
-    </div>
   </footer>
 
   <script src="https://unpkg.com/imask"></script>
