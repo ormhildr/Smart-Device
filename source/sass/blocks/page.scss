@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  min-height: 100%;
+  margin: 0;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: $text-color;
+}
