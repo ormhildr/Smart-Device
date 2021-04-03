@@ -1,0 +1,111 @@
+.page-header {
+  background-image:url("../img/header-device-desktop@1x.png"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@1x.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-color: $header-back-color;
+  background-size: 699px, auto, cover;
+  background-position: 85% 71%;
+
+  @media (max-width:$tablet-width-max) {
+    background-size: 61%,cover, cover;
+    background-position: 170% 33%,50% -128px,center;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:url("../img/header-device-desktop@2x.png"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@2x.jpg");
+  }
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 29px;
+  width: 718px;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @media (max-width: $tablet-width-max) {
+    width: 470px;
+    margin-bottom: 27px;
+    padding-left: 63px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.page-header__description {
+  position: relative;
+  margin: 0;
+  margin-bottom: 43px;
+  width: 705px;
+  padding-left: 93px;
+  font-size: 22px;
+  line-height: 34px;
+  color: $white-color;
+
+  @media (max-width: $tablet-width-max) {
+    width: 450px;
+    margin-bottom: 52px;
+    padding-left: 114px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    top: 17px;
+    left: 0;
+    background-color: $white-color;
+
+    @media (max-width: $tablet-width-max) {
+      width: 33px;
+      top: 19px;
+      left: 66px;
+    }
+  }
+}
+
+.page-header__button {
+  width: 407px;
+  margin-bottom: 93px;
+  margin-left: 93px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  background-color: $feedback-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $feedback-hover-color;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 379px;
+    margin-bottom: 162px;
+    margin-left: 114px;
+  }
+}
+
+.page-header__link {
+  display: block;
+  margin-bottom: 89px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white-color;
+  opacity: 0.5;
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}

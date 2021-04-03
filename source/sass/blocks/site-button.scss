@@ -1,0 +1,21 @@
+.site-button {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $white-color;
+  font-family: Roboto Condensed;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transition-duration: .2s;
+  }
+}
