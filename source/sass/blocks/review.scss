@@ -1,0 +1,100 @@
+.review {
+  position: relative;
+  padding-bottom: 109px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 317px;
+    height: 312px;
+    top: 3px;
+    left: 345px;
+    @include bg-image("review-date@1x.png");
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      @include bg-image("review-date@2x.png");
+      background-size: contain;
+    }
+
+    @media (max-width: $tablet-width-max) {
+      height: 358px;
+      left: -8px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 65px;
+  }
+}
+
+.review__container {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 554px;
+    padding-right: 381px;
+  }
+
+  @media (max-width:$tablet-width-max) {
+    padding-left: 212px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 15px;
+  }
+}
+
+.review__title {
+  margin-bottom: 19px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 15px;
+  }
+}
+
+.review__description {
+  margin-bottom: 39px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 27px;
+  }
+}
+
+.review__description p {
+  margin: 0;
+
+  &:first-child {
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 39px;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: $tablet-width-max) {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      -webkit-line-clamp: 8;
+    }
+  }
+}
+
+.review__button {
+  width: 180px;
+  border: 1px solid $feedback-color;
+  color: $feedback-color;
+}

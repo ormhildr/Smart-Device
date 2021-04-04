@@ -1,0 +1,132 @@
+.features {
+  margin-bottom: 110px;
+  padding-top: 109px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 52px;
+    padding-top: 55px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 38px;
+  }
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 299px;
+  gap: 30px;
+  width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width-max) {
+    width:auto;
+    grid-template-rows: 305px 232px;
+    grid-auto-rows: 232px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    grid-template-columns: auto;
+    grid-template-rows: 310px 310px 232px 243px;
+    gap: 20px;
+  }
+}
+
+.features__item {
+  position: relative;
+  padding-top: 98px;
+  padding-right: 41px;
+  padding-left: 45px;
+  border: 1px solid $border-color;
+  border-left: 3px solid $feedback-color;
+  background-color: $white-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 42px;
+    background-color: $feedback-color;
+
+    @media (max-width: $tablet-width-max) {
+      top: 23px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      background-color: $white-color;
+    }
+  }
+
+  &--fast {
+    &::before {
+      width: 29px;
+      height: 35px;
+      mask-image: url("../img/icon-stopwatch.svg");
+    }
+  }
+
+  &--vendors {
+    &::before {
+      mask-image: url("../img/icon-vendors.svg");
+    }
+  }
+
+  &--confeducality {
+    &::before {
+      width: 36px;
+      height: 31px;
+      mask-image: url("../img/icon-detective.svg");
+    }
+  }
+
+  &--personal {
+    &::before {
+      mask-image: url("../img/icon-tag.svg");
+    }
+  }
+
+  &:hover {
+    background-color: $feedback-color;
+    color: $white-color;
+
+    h3 {
+      color: $white-color;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 65px;
+    padding-right: 21px;
+    padding-left: 24px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 13px;
+  }
+}
+
+.features__item h3 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: $feedback-color;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 20px;
+  }
+}
+
+.features__item p {
+  margin: 0;
+}

@@ -14,3 +14,26 @@ body {
   line-height: 22px;
   color: $text-color;
 }
+
+.page__main {
+  @include bg-image("triangles-back.svg");
+  background-position-y: -29px;
+
+  @media (max-width: $tablet-width-max) {
+    @include bg-image("features-triangle.svg");
+    background-position-y: 91px;
+    background-position-x: 220px;
+  }
+}
+
+.page__title {
+  margin: 0;
+  font-family: Roboto Condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 28px;
+  }
+}

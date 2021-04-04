@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page">
 
   <header class="page-header">
     <div class="container">
       <nav class="header-nav">
         <a class="header-nav__logo">
-          <img src="img/logo-site-full.svg" alt="Smart Device: умные технологии" width="202" height="52">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-site.svg">
+            <img src="img/logo-site-full.svg" alt="Smart Device: умные технологии" width="202" height="52">
+          </picture>
         </a>
         <div class="header-nav__contacts">
           <ul class="header-nav__list list">
@@ -34,52 +37,60 @@
       </nav>
       <h1 class="page-header__title">Печатные платы</h1>
       <p class="page-header__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="button page-header__button site-button" href="#">Получить бесплатную консультацию</a>
+      <a class="button page-header__button page-header__button--large site-button" href="#">Получить бесплатную
+        консультацию</a>
+      <a class="button page-header__button page-header__button--small site-button" href="#">Бесплатная консультация</a>
       <a class="page-header__link" href="#">Скролл вниз</a>
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page__main">
     <section class="features">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="features__list list">
-        <li class="features__item features__item--fast">
-          <h3>Оперативные сроки </h3>
-          <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
-            заказы плат и комплектующих в самые короткие сроки</p>
-        </li>
-        <li class="features__item features__item--vendors">
-          <h3>Крупные поставщики</h3>
-          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
-          </p>
-        </li>
-        <li class="features__item features__item--confeducality">
-          <h3>Полная конфиденциальность</h3>
-          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
-          </p>
-        </li>
-        <li class="features__item features__item--personal">
-          <h3>Персонализация стоимости</h3>
-          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
-            устраивает. </p>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features__list list">
+          <li class="features__item features__item--fast">
+            <h3>Оперативные сроки </h3>
+            <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять
+              заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="features__item features__item--vendors">
+            <h3>Крупные поставщики</h3>
+            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="features__item features__item--confeducality">
+            <h3>Полная конфиденциальность</h3>
+            <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
+            </p>
+          </li>
+          <li class="features__item features__item--personal">
+            <h3>Персонализация стоимости</h3>
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+              устраивает. </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="review">
-      <h2 class="review__title">О компании</h2>
-      <div class="review__description">
-        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
-          года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-          светотехники России.</p>
+      <div class="container review__container">
+        <h2 class="review__title page__title">О компании</h2>
+        <div class="review__description">
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+            1997
+            года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Печатные
+            платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+            светотехники России.</p>
+        </div>
+        <a class="button review__button site-button" href="#">Подробнее</a>
       </div>
-      <a class="button review__button site-button" href="#">Подробнее</a>
     </section>
     <section class="services">
-      <h2 class="services__title">Service Device предлагает следующие товары и услуги</h2>
+      <h2 class="services__title page__title">Service Device предлагает следующие товары и услуги</h2>
       <ul class="services__list list">
         <li class="services__item">
           <a href="#">Производство <br> печатных плат</a>
@@ -93,7 +104,7 @@
       </ul>
     </section>
     <section class="feedback">
-      <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
+      <h2 class="feedback__title page__title">Остались вопросы? Задайте их нам!</h2>
       <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
       <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form__field">

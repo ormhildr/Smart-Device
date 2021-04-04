@@ -1,12 +1,17 @@
 .header-nav {
   display: flex;
-  padding-top: 33px;
   margin-bottom: 228px;
+  padding-top: 33px;
 
   @media (max-width: $tablet-width-max) {
     justify-content: space-between;
-    padding-top: 20px;
     margin-bottom: 116px;
+    padding-top: 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 230px;
+    padding-top: 18px;
   }
 }
 
