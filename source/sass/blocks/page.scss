@@ -24,6 +24,11 @@ body {
     background-position-y: 91px;
     background-position-x: 220px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    background-position-y: 653px;
+    background-position-x: -112px;
+  }
 }
 
 .page__title {
@@ -32,6 +37,10 @@ body {
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 32px;
+  }
 
   @media (max-width: $mobile-width-max) {
     font-size: 28px;

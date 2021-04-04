@@ -27,6 +27,10 @@
     }
   }
 
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 85px;
+  }
+
   @media (max-width: $mobile-width-max) {
     padding-bottom: 65px;
   }
