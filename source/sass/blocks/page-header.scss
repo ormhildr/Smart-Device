@@ -120,7 +120,7 @@
 
   @media (max-width: $tablet-width-max) {
     width: 379px;
-    margin-bottom: 162px;
+    margin-bottom: 165px;
     margin-left: 114px;
   }
 
@@ -148,6 +148,11 @@
   opacity: 0.5;
   writing-mode:vertical-rl;
   transform:rotate(180deg);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 
   @media (max-width: $tablet-width-max) {
     display: none;

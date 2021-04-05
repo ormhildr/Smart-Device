@@ -17,5 +17,6 @@
   &:active,
   &:focus {
     transition-duration: .2s;
+    outline: none;
   }
 }

@@ -1,6 +1,6 @@
 .review {
   position: relative;
-  padding-bottom: 109px;
+  padding-bottom: 113px;
 
   &::before {
     content: "";
@@ -28,7 +28,7 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    padding-bottom: 85px;
+    padding-bottom: 87px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -68,7 +68,7 @@
   margin-bottom: 39px;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 27px;
+    margin-bottom: 34px;
   }
 }
 
@@ -101,4 +101,10 @@
   width: 180px;
   border: 1px solid $feedback-color;
   color: $feedback-color;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $feedback-color;
+  }
 }

@@ -71,16 +71,20 @@
   &--mail {
     &::before {
       background-image: url("../img/icon-mail.svg");
-      top: 2px;
-      left: -39px;
       width: 19px;
       height: 14px;
+      top: 2px;
+      left: -39px;
 
       @media (max-width: $tablet-width-max) {
-        top: -15px;
-        left: -28px;
         width: 26px;
         height: 19px;
+        top: -15px;
+        left: -33px;
+      }
+
+      @media (max-width: $mobile-width-max) {
+        left: -24px;
       }
     }
   }
@@ -88,16 +92,16 @@
   &--phone {
     &::before {
       background-image: url("../img/icon-phone.svg");
-      top: 0;
-      left: -34px;
       width: 18px;
       height: 19px;
+      top: 0;
+      left: -34px;
 
       @media (max-width: $tablet-width-max) {
-        top: -16px;
-        left: -18px;
         width: 21px;
         height: 21px;
+        top: -16px;
+        left: -23px;
       }
     }
   }
