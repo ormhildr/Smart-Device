@@ -1,0 +1,107 @@
+.page-footer a {
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.page-footer__top {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 59px;
+  border-bottom: 1px solid $footer-border-color;
+}
+
+.page-footer__top a {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  color: $footer-links-color;
+}
+
+.page-footer__links {
+  padding-left: 252px;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 52px;
+}
+
+.page-footer__links-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 170px;
+}
+
+.page-footer__links-item {
+  margin-right: 15px;
+}
+
+.page-footer__titles {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 300px;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: $header-back-color;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.page-footer__menu {
+  padding-right: 25px;
+}
+
+.page-footer__menu-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 74px;
+}
+
+.page-footer__menu-item {
+  max-width: 250px;
+}
+
+.page-footer__contacts {
+  max-width: 600px;
+  padding-right: 234px;
+}
+
+.page-footer__contacts-address {
+  margin: 0;
+  color: $footer-links-color;
+}
+
+.page-footer__down {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $footer-links-color;
+}
+
+.page-footer__law {
+  margin: 0;
+  margin-right: 37px;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  margin-right: 90px;
+}
+
+.page-footer__privacy {
+  color: $footer-links-color;
+}
+
+.page-footer__tag {
+  margin: 0;
+}

@@ -23,7 +23,7 @@
 .page-header__title {
   margin: 0;
   margin-bottom: 29px;
-  width: 718px;
+  max-width: 718px;
   font-family: Roboto Condensed;
   font-weight: bold;
   font-size: 80px;
@@ -52,7 +52,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 43px;
-  width: 705px;
+  max-width: 705px;
   padding-left: 93px;
   font-size: 22px;
   line-height: 34px;
@@ -120,7 +120,7 @@
 
   @media (max-width: $tablet-width-max) {
     width: 379px;
-    margin-bottom: 165px;
+    margin-bottom: 162px;
     margin-left: 114px;
   }
 

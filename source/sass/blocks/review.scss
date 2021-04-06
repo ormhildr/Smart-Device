@@ -1,6 +1,6 @@
 .review {
   position: relative;
-  padding-bottom: 113px;
+  padding-bottom: 110px;
 
   &::before {
     content: "";
@@ -28,7 +28,7 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    padding-bottom: 87px;
+    padding-bottom: 85px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -53,6 +53,7 @@
 }
 
 .review__title {
+  max-width: 500px;
   margin-bottom: 19px;
 
   @media (max-width: $tablet-width-max) {
@@ -68,7 +69,7 @@
   margin-bottom: 39px;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 34px;
+    margin-bottom: 28px;
   }
 }
 
