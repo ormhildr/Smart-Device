@@ -434,7 +434,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1154,7 +1154,7 @@ body {
   padding-bottom: 113px;
   background-color: #00b2ff;
   background-image: url("../img/icon-header-triangle.svg"), url("../img/triangles-feedback.svg");
-  background-position: -855px -178px, 1556px 35px;
+  background-position: -855px -178px, 110% 35px;
   background-repeat: no-repeat, no-repeat; }
   @media (max-width: 1023px) {
     .feedback {
@@ -1222,6 +1222,11 @@ body {
       .feedback__form::before {
         display: none; } }
 
+.feedback__form-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
 .feedback__form-field {
   margin-bottom: 40px;
   width: 47%; }
@@ -1284,6 +1289,11 @@ body {
   padding-top: 65px;
   padding-bottom: 59px;
   border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
+  @media (max-width: 1023px) {
+    .page-footer__top {
+      padding-top: 25px;
+      flex-wrap: wrap;
+      flex-direction: row; } }
 
 .page-footer__top a {
   display: block;
@@ -1293,15 +1303,29 @@ body {
 
 .page-footer__links {
   padding-left: 252px; }
+  @media (max-width: 1023px) {
+    .page-footer__links {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 65px;
+      padding-right: 9px;
+      padding-left: 25px; } }
 
 .page-footer__logo {
   display: block;
   margin-bottom: 52px; }
+  @media (max-width: 1023px) {
+    .page-footer__logo {
+      margin-bottom: 0; } }
 
 .page-footer__links-list {
   display: flex;
   flex-wrap: wrap;
   max-width: 170px; }
+  @media (max-width: 1023px) {
+    .page-footer__links-list {
+      padding-top: 11px; } }
 
 .page-footer__links-item {
   margin-right: 15px; }
@@ -1321,11 +1345,19 @@ body {
 
 .page-footer__menu {
   padding-right: 25px; }
+  @media (max-width: 1023px) {
+    .page-footer__menu {
+      max-width: 82%;
+      padding-right: 0;
+      padding-left: 3%; } }
 
 .page-footer__menu-list {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 74px; }
+  @media (max-width: 1023px) {
+    .page-footer__menu-list {
+      grid-template-columns: auto; } }
 
 .page-footer__menu-item {
   max-width: 250px; }
@@ -1333,6 +1365,9 @@ body {
 .page-footer__contacts {
   max-width: 600px;
   padding-right: 234px; }
+  @media (max-width: 1023px) {
+    .page-footer__contacts {
+      padding-right: 2%; } }
 
 .page-footer__contacts-address {
   margin: 0;
