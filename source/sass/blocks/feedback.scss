@@ -20,11 +20,9 @@
 }
 
 .feedback__container {
-  @media (min-width: $desktop-width) {
     margin: 0;
     padding-left: 971px;
     padding-right: 375px;
-  }
 
   @media (max-width: $tablet-width-max) {
     padding-left: 91px;
@@ -91,6 +89,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+  }
 }
 
 .feedback__form-field {
@@ -146,7 +148,7 @@
 }
 
 .feedback__checkbox {
-  width: 230px;
+  max-width: 230px;
   padding-top: 8px;
 
   @media (max-width: $tablet-width-max) {

@@ -14,9 +14,16 @@
   border-bottom: 1px solid $footer-border-color;
 
   @media (max-width: $tablet-width-max) {
-    padding-top: 25px;
+    padding-top: 18px;
+    padding-bottom: 38px;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 47px;
+    padding-bottom: 5px;
+    border-bottom: none;
   }
 }
 
@@ -34,9 +41,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 65px;
-    padding-right: 9px;
-    padding-left: 25px;
+    margin-bottom: 38px;
+    padding-bottom: 26px;
+    padding-left: 0;
+    border-bottom: 1px solid $footer-border-color;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 46px;
   }
 }
 
@@ -46,6 +60,12 @@
 
   @media (max-width: $tablet-width-max) {
     margin-bottom: 0;
+    padding-left: 25px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    align-self: center;
+    padding-left: 0;
   }
 }
 
@@ -56,6 +76,13 @@
 
   @media (max-width: $tablet-width-max) {
     padding-top: 11px;
+    padding-right: 9px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 32px;
+    padding-right: 0;
+    align-self: center;
   }
 }
 
@@ -75,15 +102,25 @@
   color: $header-back-color;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 27px;
+  }
 }
 
 .page-footer__menu {
   padding-right: 25px;
 
   @media (max-width: $tablet-width-max) {
-    max-width: 82%;
     padding-right: 0;
     padding-left: 3%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    border-bottom: 1px solid $footer-border-color;
   }
 }
 
@@ -99,14 +136,46 @@
 
 .page-footer__menu-item {
   max-width: 250px;
+
+  @media (max-width: $tablet-width-max) {
+    &--details {
+      order: 1;
+    }
+
+    &--delivery {
+      order: 2;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+  }
 }
 
 .page-footer__contacts {
-  max-width: 600px;
   padding-right: 234px;
 
   @media (max-width: $tablet-width-max) {
     padding-right: 2%;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    padding-right: 0;
+    border-bottom: 1px solid $footer-border-color;
+  }
+}
+
+
+.page-footer__contacts__title {
+  margin-bottom: 31px;
+}
+
+.page-footer__menu-inner {
+  @media (max-width: $mobile-width-max) {
+    padding-top: 29px;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 
@@ -120,25 +189,94 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 13px;
+  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: $footer-links-color;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 21px;
+    padding-bottom: 23px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27px;
+  }
 }
 
 .page-footer__law {
   margin: 0;
   margin-right: 37px;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
 }
 
 .page-footer__copyright {
   margin: 0;
-  margin-right: 90px;
+
+  &--desktop {
+    margin-right: 90px;
+
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (max-width: $tablet-width-max) {
+      display: block;
+      padding-top: 17px;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      color: $footer-links-color;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      padding-top: 25px;
+      align-self: center;
+    }
+  }
 }
 
 .page-footer__privacy {
   color: $footer-links-color;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 21px;
+  }
 }
 
 .page-footer__tag {
   margin: 0;
+}
+
+.page-footer__nav {
+  @media (max-width: $mobile-width-max) {
+    cursor: pointer;
+  }
+}
+
+.page-footer__list {
+  padding-bottom: 33px;
+
+  @media(max-width:$mobile-width-max) {
+    display: none;
+
+    &--nojs {
+      display: block;
+    }
+
+    &--opened {
+      padding-bottom: 33px;
+    }
+  }
 }

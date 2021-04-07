@@ -37,18 +37,18 @@
 }
 
 .review__container {
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding-left: 554px;
-    padding-right: 381px;
-  }
+  margin: 0;
+  padding-left: 554px;
+  padding-right: 381px;
 
   @media (max-width:$tablet-width-max) {
     padding-left: 212px;
+    padding-right: 21px;
   }
 
   @media (max-width: $mobile-width-max) {
     padding-left: 15px;
+    padding-right: 17px;
   }
 }
 
