@@ -1331,6 +1331,12 @@ body {
       margin-bottom: 0;
       padding-bottom: 46px; } }
 
+.page-footer__link-svg {
+  fill: #cdcdcd; }
+
+.page-footer__link:hover .page-footer__link-svg, .page-footer__link:focus .page-footer__link-svg {
+  fill: rgba(27, 45, 55, 0.5); }
+
 .page-footer__logo {
   display: block;
   margin-bottom: 52px; }
@@ -1492,7 +1498,31 @@ body {
 
 @media (max-width: 767px) {
   .page-footer__nav {
-    cursor: pointer; } }
+    position: relative;
+    cursor: pointer; }
+    .page-footer__nav::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 1px;
+      top: 37px;
+      right: 17px;
+      background-color: #c4c4c4; }
+    .page-footer__nav::after {
+      display: none;
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 16px;
+      top: 30px;
+      right: 25px;
+      background-color: #c4c4c4; }
+    .page-footer__nav--closed::after {
+      display: block; }
+    .page-footer__nav--nojs {
+      cursor: auto; }
+      .page-footer__nav--nojs::before, .page-footer__nav--nojs::after {
+        display: none; } }
 
 .page-footer__list {
   padding-bottom: 33px; }
@@ -1502,6 +1532,9 @@ body {
       .page-footer__list--nojs {
         display: block; }
       .page-footer__list--opened {
-        padding-bottom: 33px; } }
+        display: none;
+        padding-bottom: 33px; }
+      .page-footer__list--closed {
+        display: block; } }
 
 /*# sourceMappingURL=style.css.map */
