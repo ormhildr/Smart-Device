@@ -9,6 +9,7 @@
     height: 312px;
     top: 3px;
     left: 345px;
+
     @include bg-image("review-date@1x.png");
     z-index: -1;
 
@@ -38,10 +39,10 @@
 
 .review__container {
   margin: 0;
-  padding-left: 554px;
-  padding-right: 381px;
+  padding-left: 29%;
+  padding-right: 20%;
 
-  @media (max-width:$tablet-width-max) {
+  @media (max-width: $tablet-width-max) {
     padding-left: 212px;
     padding-right: 21px;
   }

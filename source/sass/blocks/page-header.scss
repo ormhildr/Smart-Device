@@ -1,11 +1,11 @@
 .page-header {
-  background-image:url("../img/header-device-desktop@1x.png"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@1x.jpg");
+  background-image: url("../img/header-device-desktop@1x.png"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-color: $header-back-color;
   background-size: 699px, auto, cover;
   background-position: 85% 71%;
 
-  @media (max-width:$tablet-width-max) {
+  @media (max-width: $tablet-width-max) {
     background-size: 61%, cover, cover;
     background-position: 170% 33%, 50% -128px, center;
   }
@@ -16,7 +16,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image:url("../img/header-device-desktop@2x.png"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@2x.jpg");
+    background-image: url("../img/header-device-desktop@2x.png"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@2x.jpg");
   }
 }
 
@@ -24,7 +24,7 @@
   margin: 0;
   margin-bottom: 29px;
   max-width: 718px;
-  font-family: Roboto Condensed;
+  font-family: $main-font-family;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
@@ -146,8 +146,8 @@
   line-height: 16px;
   color: $white-color;
   opacity: 0.5;
-  writing-mode:vertical-rl;
-  transform:rotate(180deg);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 
   &:hover,
   &:focus {
