@@ -103,7 +103,7 @@
   margin-right: 15px;
 }
 
-.page-footer__titles {
+.page-footer h2 {
   margin: 0;
   margin-bottom: 25px;
   max-width: 300px;
@@ -177,11 +177,6 @@
     padding-right: 0;
     border-bottom: 1px solid $footer-border-color;
   }
-}
-
-
-.page-footer__contacts__title {
-  margin-bottom: 31px;
 }
 
 .page-footer__menu-inner {

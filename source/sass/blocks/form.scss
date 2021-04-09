@@ -1,4 +1,4 @@
-.form {
+form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,7 +9,7 @@
 }
 
 .form__field input,
-.form textarea {
+form textarea {
   background-color: $input-back-color;
   color: $white-color;
   border: none;
@@ -22,6 +22,10 @@
   &:focus {
     outline: 1px solid $white-color;
   }
+}
+
+form textarea {
+  resize: none;
 }
 
 .form__button {

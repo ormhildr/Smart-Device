@@ -12,7 +12,7 @@ const modalOverlay = modalWindow.querySelector(`.modal__overlay`);
 const modalClosed = modalWindow.querySelector(`.modal__close`);
 const modalOpened = document.querySelector(`.header-nav__button`);
 
-if (modalWindow !== null) {
+if (modalWindow !== null && modalOpened !== null && modalClosed !== null && modalOverlay !== null) {
   modalOpened.addEventListener(`click`, () => {
     modalWindow.classList.add(`modal--active`);
   });

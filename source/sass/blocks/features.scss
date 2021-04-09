@@ -1,9 +1,9 @@
 .features {
-  margin-bottom: 110px;
+  padding-bottom: 110px;
   padding-top: 109px;
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 52px;
+    padding-bottom: 52px;
     padding-top: 55px;
   }
 
@@ -13,9 +13,6 @@
 }
 
 .features__container {
-  padding-right: 19%;
-  padding-left: 20%;
-
   @media (max-width: $tablet-width-max) {
     padding-left: 25px;
     padding-right: 25px;
@@ -24,15 +21,16 @@
 
 .features__list {
   display: grid;
+  max-width: 83%;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 299px;
+  grid-auto-rows: minmax(299px, 1fr);
   gap: 30px;
   margin: 0 auto;
 
   @media (max-width: $tablet-width-max) {
-    width: auto;
+    max-width: auto;
     grid-template-rows: 305px 232px;
-    grid-auto-rows: 232px;
+    grid-auto-rows: minmax(232px, 1fr);
   }
 
   @media (max-width: $mobile-width-max) {

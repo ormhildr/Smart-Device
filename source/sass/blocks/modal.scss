@@ -26,19 +26,19 @@
   width: 403px;
 }
 
-.modal__title {
+.modal h2 {
   margin-bottom: 8px;
   font-size: 28px;
   color: $white-color;
 }
 
-.modal__description {
+.modal p {
   margin: 0;
   margin-bottom: 35px;
   color: $white-color;
 }
 
-.modal__form {
+.modal form {
   flex-direction: column;
 }
 
@@ -49,13 +49,13 @@
 .modal__form-field input {
   width: 100%;
   height: 52px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
-.modal__form textarea {
+.modal textarea {
   margin-bottom: 30px;
   padding-top: 12px;
-  padding-left: 20px;
+  padding: 20px;
   height: 104px;
 }
 

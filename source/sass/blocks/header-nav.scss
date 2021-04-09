@@ -27,7 +27,8 @@
 
 .header-nav__list {
   display: flex;
-  width: max-content;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin-right: 56px;
 
   @media (max-width: $tablet-width-max) {
@@ -37,7 +38,7 @@
 
 .header-nav__item {
   &:first-child {
-    margin-right: 122px;
+    margin-right: 81px;
 
     @media (max-width: $tablet-width-max) {
       margin-right: 50px;
@@ -46,6 +47,7 @@
 }
 
 .header-nav__item a {
+  padding-left: 40px;
   line-height: 18px;
   color: $white-color;
 
@@ -60,7 +62,8 @@
   &::before {
     position: absolute;
     content: "";
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &--mail {
@@ -69,7 +72,7 @@
       width: 19px;
       height: 14px;
       top: 2px;
-      left: -39px;
+      left: 0;
 
       @media (max-width: $tablet-width-max) {
         width: 26px;
@@ -90,7 +93,7 @@
       width: 18px;
       height: 19px;
       top: 0;
-      left: -34px;
+      left: 5px;
 
       @media (max-width: $tablet-width-max) {
         width: 21px;
