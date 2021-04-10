@@ -311,12 +311,12 @@
     }
 
     &--opened {
-      display: none;
+      display: block;
       padding-bottom: 33px;
     }
 
     &--closed {
-      display: block;
+      display: none;
     }
   }
 }

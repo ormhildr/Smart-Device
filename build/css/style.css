@@ -490,10 +490,10 @@ body {
   color: #666666; }
 
 .page__webp .page-header {
-  background-image: url("../img/header-device-desktop@1x.webp"), url("../img/icon-header-triangle.webp"), url("../img/header-background-desktop@1x.webp"); }
+  background-image: url("../img/header-device-desktop@1x.webp"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@1x.webp"); }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .page__webp .page-header {
-      background-image: url("../img/header-device-desktop@2x.webp"), url("../img/icon-header-triangle.webp"), url("../img/header-background-desktop@2x.webp"); } }
+      background-image: url("../img/header-device-desktop@2x.webp"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@2x.webp"); } }
 
 .page__webp .feedback form::before {
   background-image: url("../img/feedback-airplane@1x.webp"); }
@@ -1645,10 +1645,10 @@ form textarea {
       .page-footer__list--nojs {
         display: block; }
       .page-footer__list--opened {
-        display: none;
+        display: block;
         padding-bottom: 33px; }
       .page-footer__list--closed {
-        display: block; } }
+        display: none; } }
 
 .modal {
   display: none; }
@@ -1696,7 +1696,6 @@ form textarea {
 
 .modal textarea {
   margin-bottom: 30px;
-  padding-top: 12px;
   padding: 20px;
   height: 104px; }
 

@@ -17,10 +17,10 @@ body {
 
 .page__webp {
   .page-header {
-    background-image: url("../img/header-device-desktop@1x.webp"), url("../img/icon-header-triangle.webp"), url("../img/header-background-desktop@1x.webp");
+    background-image: url("../img/header-device-desktop@1x.webp"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/header-device-desktop@2x.webp"), url("../img/icon-header-triangle.webp"), url("../img/header-background-desktop@2x.webp");
+      background-image: url("../img/header-device-desktop@2x.webp"), url("../img/icon-header-triangle.svg"), url("../img/header-background-desktop@2x.webp");
     }
   }
 
