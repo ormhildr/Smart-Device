@@ -22,7 +22,7 @@
 .feedback__container {
   margin: 0;
   padding-left: 51%;
-  padding-right: 19%;
+  padding-right: 20%;
 
   @media (max-width: $tablet-width-max) {
     padding-left: 91px;
@@ -63,6 +63,7 @@
 
 .feedback form {
   position: relative;
+  min-width: fit-content;
 
   &::before {
     position: absolute;

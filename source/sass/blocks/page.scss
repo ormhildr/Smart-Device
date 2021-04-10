@@ -15,6 +15,110 @@ body {
   color: $text-color;
 }
 
+.page__webp {
+  .page-header {
+    background-image: url("../img/header-device-desktop@1x.webp"), url("../img/icon-header-triangle.webp"), url("../img/header-background-desktop@1x.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-device-desktop@2x.webp"), url("../img/icon-header-triangle.webp"), url("../img/header-background-desktop@2x.webp");
+    }
+  }
+
+  .feedback form {
+    &::before {
+      background-image: url("../img/feedback-airplane@1x.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/feedback-airplane@2x.webp");
+      }
+    }
+  }
+
+  .review__container {
+    &::before {
+      @include bg-image("review-date@1x.webp");
+
+      @media (min-resolution: 2dppx) {
+        @include bg-image("review-date@2x.webp");
+      }
+    }
+  }
+
+  .services__item {
+    &--production {
+      @include bg-image("services-production-desktop@1x.webp");
+
+      @media (min-resolution: 2dppx) {
+        @include bg-image("services-production-desktop@2x.webp");
+      }
+
+      @media (max-width: $tablet-width-max) {
+        @include bg-image("services-production-tablet@1x.webp");
+
+        @media (min-resolution: 2dppx) {
+          @include bg-image("services-production-tablet@2x.webp");
+        }
+      }
+
+      @media (max-width: $mobile-width-max) {
+        @include bg-image("services-production-mobile@1x.webp");
+
+        @media (min-resolution: 2dppx) {
+          @include bg-image("services-production-mobile@2x.webp");
+        }
+      }
+    }
+
+    &--montage {
+      @include bg-image("services-montage-desktop@1x.webp");
+
+      @media (min-resolution: 2dppx) {
+        @include bg-image("services-montage-desktop@2x.webp");
+      }
+
+      @media (max-width: $tablet-width-max) {
+        @include bg-image("services-montage-tablet@1x.webp");
+
+        @media (min-resolution: 2dppx) {
+          @include bg-image("services-montage-tablet@2x.webp");
+        }
+      }
+
+      @media (max-width: $mobile-width-max) {
+        @include bg-image("services-montage-mobile@1x.webp");
+
+        @media (min-resolution: 2dppx) {
+          @include bg-image("services-montage-mobile@2x.webp");
+        }
+      }
+    }
+
+    &--details {
+      @include bg-image("services-components-desktop@1x.webp");
+
+      @media (min-resolution: 2dppx) {
+        @include bg-image("services-components-desktop@2x.webp");
+      }
+
+      @media (max-width: $tablet-width-max) {
+        @include bg-image("services-components-tablet@1x.webp");
+
+        @media (min-resolution: 2dppx) {
+          @include bg-image("services-components-tablet@2x.webp");
+        }
+      }
+
+      @media (max-width: $mobile-width-max) {
+        @include bg-image("services-components-mobile@1x.webp");
+
+        @media (min-resolution: 2dppx) {
+          @include bg-image("services-components-mobile@2x.webp");
+        }
+      }
+    }
+  }
+}
+
 .page__main {
   @include bg-image("triangles-back.svg");
   background-position-y: -29px;

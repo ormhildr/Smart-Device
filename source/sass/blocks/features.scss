@@ -17,6 +17,11 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .features__list {
@@ -28,7 +33,7 @@
   margin: 0 auto;
 
   @media (max-width: $tablet-width-max) {
-    max-width: auto;
+    max-width: 100%;
     grid-template-rows: 305px 232px;
     grid-auto-rows: minmax(232px, 1fr);
   }

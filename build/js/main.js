@@ -1,5 +1,15 @@
 'use strict';
 
+const body = document.body;
+
+
+window.Modernizr.on(`webp`, function (result) {
+  if (result) {
+    body.classList.add(`page__webp`);
+  }
+});
+
+
 document.querySelectorAll(`input[name=phone]`).forEach((e) => {
   IMask(e, {mask: `+{7}(000)000-00-00`});
 });
