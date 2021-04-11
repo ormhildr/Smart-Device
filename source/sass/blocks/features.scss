@@ -12,18 +12,6 @@
   }
 }
 
-.features__container {
-  @media (max-width: $tablet-width-max) {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  @media (max-width: $mobile-width-max) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
 .features__list {
   display: grid;
   max-width: 83%;

@@ -923,16 +923,6 @@ form textarea {
     .features {
       padding-top: 38px; } }
 
-@media (max-width: 1023px) {
-  .features__container {
-    padding-left: 25px;
-    padding-right: 25px; } }
-
-@media (max-width: 767px) {
-  .features__container {
-    padding-left: 15px;
-    padding-right: 15px; } }
-
 .features__list {
   display: grid;
   max-width: 83%;
@@ -1031,7 +1021,6 @@ form textarea {
 
 .review__container {
   position: relative;
-  margin: 0;
   padding-left: 29%;
   padding-right: 20%; }
   @media (max-width: 1023px) {
@@ -1117,17 +1106,6 @@ form textarea {
   @media (max-width: 767px) {
     .services {
       padding-bottom: 64px; } }
-
-@media (max-width: 1023px) {
-  .services__container {
-    margin: 0 auto;
-    padding-left: 25px;
-    padding-right: 25px; } }
-
-@media (max-width: 767px) {
-  .services__container {
-    padding-left: 15px;
-    padding-right: 11px; } }
 
 .services h2 {
   margin-bottom: 55px;
