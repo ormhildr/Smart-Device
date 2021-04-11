@@ -8,7 +8,7 @@ form {
   }
 }
 
-.form__field input,
+.form-field input,
 form textarea {
   background-color: $input-back-color;
   color: $white-color;
@@ -28,7 +28,7 @@ form textarea {
   resize: none;
 }
 
-.form__button {
+.form-button {
   background-color: transparent;
 
   &:hover,
@@ -38,13 +38,13 @@ form textarea {
   }
 }
 
-.form__checkbox {
+.form-checkbox {
   font-size: 14px;
   line-height: 16px;
   color: $white-color;
 }
 
-.form__checkbox input + label {
+.form-checkbox input + label {
   position: relative;
   cursor: pointer;
 
@@ -59,14 +59,14 @@ form textarea {
   }
 }
 
-.form__checkbox input:hover + label,
-.form__checkbox input:focus + label {
+.form-checkbox input:hover + label,
+.form-checkbox input:focus + label {
   &::before {
     background-color: $input-back-color;
   }
 }
 
-.form__checkbox input:checked + label {
+.form-checkbox input:checked + label {
   &::after {
     content: "";
     position: absolute;

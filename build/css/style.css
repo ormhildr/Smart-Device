@@ -617,39 +617,39 @@ form {
     form {
       flex-direction: column; } }
 
-.form__field input,
+.form-field input,
 form textarea {
   background-color: #19baff;
   color: #ffffff;
   border: none;
   outline: none; }
-  .form__field input::-moz-placeholder, form textarea::-moz-placeholder {
+  .form-field input::-moz-placeholder, form textarea::-moz-placeholder {
     color: #ffffff; }
-  .form__field input::placeholder,
+  .form-field input::placeholder,
   form textarea::placeholder {
     color: #ffffff; }
-  .form__field input:focus,
+  .form-field input:focus,
   form textarea:focus {
     outline: 1px solid #ffffff; }
 
 form textarea {
   resize: none; }
 
-.form__button {
+.form-button {
   background-color: transparent; }
-  .form__button:hover, .form__button:focus {
+  .form-button:hover, .form-button:focus {
     background-color: #ffffff;
     color: #00b2ff; }
 
-.form__checkbox {
+.form-checkbox {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff; }
 
-.form__checkbox input + label {
+.form-checkbox input + label {
   position: relative;
   cursor: pointer; }
-  .form__checkbox input + label::before {
+  .form-checkbox input + label::before {
     content: "";
     position: absolute;
     top: 2px;
@@ -658,11 +658,11 @@ form textarea {
     height: 16px;
     border: 1px solid #ffffff; }
 
-.form__checkbox input:hover + label::before,
-.form__checkbox input:focus + label::before {
+.form-checkbox input:hover + label::before,
+.form-checkbox input:focus + label::before {
   background-color: #19baff; }
 
-.form__checkbox input:checked + label::after {
+.form-checkbox input:checked + label::after {
   content: "";
   position: absolute;
   top: 6px;
