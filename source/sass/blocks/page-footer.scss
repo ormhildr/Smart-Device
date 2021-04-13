@@ -6,19 +6,23 @@
 }
 
 .page-footer__top {
+  border-bottom: 1px solid $footer-border-color;
+
+  @media (max-width: $mobile-width-max) {
+    border-bottom: none;
+  }
+}
+
+.page-footer__container {
   display: flex;
   position: relative;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding-top: 65px;
-  padding-right: 12%;
   padding-bottom: 25px;
-  padding-left: 13%;
-  border-bottom: 1px solid $footer-border-color;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 18px;
-    padding-right: 2%;
+    padding-right: 0;
     padding-bottom: 6px;
     padding-left: 0;
     flex-wrap: wrap;
@@ -27,7 +31,6 @@
 
   @media (max-width: $mobile-width-max) {
     padding-top: 47px;
-    padding-right: 0;
     padding-bottom: 5px;
     border-bottom: none;
   }
@@ -35,6 +38,7 @@
 
 .page-footer__top a {
   display: block;
+  width: fit-content;
   font-size: 15px;
   line-height: 25px;
   color: $footer-links-color;
@@ -163,7 +167,15 @@
 }
 
 .page-footer__contacts {
+  max-width: 26%;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: none;
+    padding-right: 3%;
+  }
+
   @media (max-width: $mobile-width-max) {
+    max-width: none;
     width: 100%;
     border-bottom: 1px solid $footer-border-color;
   }

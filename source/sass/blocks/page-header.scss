@@ -4,7 +4,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-color: $header-back-color;
   background-size: 699px, auto, cover;
-  background-position: 85% 71%;
+  background-position: 1041px 261px, 0, 85% 71%;
 
   @media (max-width: $tablet-width-max) {
     padding-bottom: 0;
@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    background-size: 94%, cover, cover;
+    background-size: 300px, cover, cover;
     background-position: 124% 22%, 55% -126px, center;
   }
 

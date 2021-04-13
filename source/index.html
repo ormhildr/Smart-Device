@@ -33,7 +33,7 @@
               <a class="header-nav__link header-nav__link--phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
             </li>
           </ul>
-          <a class="button header-nav__button site-button" href="#">Заказать звонок</a>
+          <a class="button header-nav__button site-button" href="modal.html" target="_blank">Заказать звонок</a>
         </div>
       </nav>
       <h1 class="page-header__title">Печатные платы</h1>
@@ -125,7 +125,7 @@
             <label class="visually-hidden" for="user-phone">Номер телефона</label>
             <input id="user-phone" name="phone" type="tel" placeholder="Телефон" minlength="16" required>
           </div>
-          <textarea name="message" id="message" placeholder="Ваш вопрос" required></textarea>
+          <textarea name="message" id="message" placeholder="Ваш вопрос"></textarea>
           <div class="feedback__form-inner">
             <button class="feedback__button button form-button site-button" type="submit">Задать вопрос</button>
             <div class="feedback__checkbox form-checkbox">
@@ -140,77 +140,79 @@
 
   <footer class="page-footer">
     <div class="page-footer__top">
-      <div class="page-footer__links">
-        <a class="page-footer__logo">
-          <img src="img/logo-site-footer.svg" alt="Smart Device: умные технологии" width="216" height="52">
-        </a>
-        <p class="page-footer__copyright page-footer__copyright--tablet">1999-2018 SD Service Devices</p>
-        <ul class="page-footer__links-list list">
-          <li class="page-footer__links-item page-footer__links-item--fb">
-            <a class="page-footer__link page-footer__link--fb" href="https://www.facebook.com/htmlacademy"
-              target="_blank" aria-label="Facebook">
-              <svg class="page-footer__link-svg" width="27" height="27" aria-label="Мы на Facebook">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="page-footer__links-item page-footer__links-item--class">
-            <a class="page-footer__link page-footer__link--class" href="https://ok.ru/" target="_blank"
-              aria-label="Одноклассники">
-              <svg class="page-footer__link-svg" width="27" height="27" aria-label="Мы в Одноклассниках">
-                <use xlink:href="img/sprite.svg#icon-classmate"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="page-footer__links-item page-footer__links-item--vk">
-            <a class="page-footer__link page-footer__link--vk" href="https://vk.com/htmlacademy" target="_blank"
-              aria-label="ВКонтакте">
-              <svg class="page-footer__link-svg" width="27" height="27" aria-label="Мы ВКонтакте">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <section class="page-footer__menu page-footer__nav page-footer__nav--nojs page-footer__nav--closed">
-        <div class="page-footer__menu-inner page__inner">
-          <h2>Разделы сайта</h2>
-          <ul class="page-footer__menu-list page-footer__list page-footer__list--nojs page-footer__list--closed list">
-            <li class="page-footer__menu-item">
-              <a href="#">О компании</a>
+      <div class="container page-footer__container">
+        <div class="page-footer__links">
+          <a class="page-footer__logo">
+            <img src="img/logo-site-footer.svg" alt="Smart Device: умные технологии" width="216" height="52">
+          </a>
+          <p class="page-footer__copyright page-footer__copyright--tablet">1999-2018 SD Service Devices</p>
+          <ul class="page-footer__links-list list">
+            <li class="page-footer__links-item page-footer__links-item--fb">
+              <a class="page-footer__link page-footer__link--fb" href="https://www.facebook.com/htmlacademy"
+                target="_blank" aria-label="Facebook">
+                <svg class="page-footer__link-svg" width="27" height="27" aria-label="Мы на Facebook">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
             </li>
-            <li class="page-footer__menu-item page-footer__menu-item--details">
-              <a href="#">Комплектующие</a>
+            <li class="page-footer__links-item page-footer__links-item--class">
+              <a class="page-footer__link page-footer__link--class" href="https://ok.ru/" target="_blank"
+                aria-label="Одноклассники">
+                <svg class="page-footer__link-svg" width="27" height="27" aria-label="Мы в Одноклассниках">
+                  <use xlink:href="img/sprite.svg#icon-classmate"></use>
+                </svg>
+              </a>
             </li>
-            <li class="page-footer__menu-item page-footer__menu-item--products">
-              <a href="#">Продукты</a>
-            </li>
-            <li class="page-footer__menu-item page-footer__menu-item--delivery">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="page-footer__menu-item page-footer__menu-item--made">
-              <a href="#">Производство печатных плат</a>
-            </li>
-            <li class="page-footer__menu-item page-footer__menu-item--contacts">
-              <a href="#">Контакты</a>
-            </li>
-            <li class="page-footer__menu-item page-footer__menu-item--montage">
-              <a href="#">Монтаж печатных плат</a>
+            <li class="page-footer__links-item page-footer__links-item--vk">
+              <a class="page-footer__link page-footer__link--vk" href="https://vk.com/htmlacademy" target="_blank"
+                aria-label="ВКонтакте">
+                <svg class="page-footer__link-svg" width="27" height="27" aria-label="Мы ВКонтакте">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="page-footer__contacts page-footer__nav page-footer__nav--nojs page-footer__nav--closed">
-        <div class="page-footer__menu-inner page__inner">
-          <h2>Наш офис</h2>
-          <div class="page-footer__list page-footer__list--nojs page-footer__list--closed">
-            <p class="page-footer__contacts-address">г. Мытищи, Олимпийский проспект, д.10</p>
-            <a class="page-footer__contacts-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a class="page-footer__contacts-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
-            <a class="page-footer__contacts-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
+        <section class="page-footer__menu page-footer__nav page-footer__nav--nojs page-footer__nav--opened">
+          <div class="page-footer__menu-inner page__inner">
+            <h2>Разделы сайта</h2>
+            <ul class="page-footer__menu-list page-footer__list page-footer__list--opened page-footer__list--nojs list">
+              <li class="page-footer__menu-item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="page-footer__menu-item page-footer__menu-item--details">
+                <a href="#">Комплектующие</a>
+              </li>
+              <li class="page-footer__menu-item page-footer__menu-item--products">
+                <a href="#">Продукты</a>
+              </li>
+              <li class="page-footer__menu-item page-footer__menu-item--delivery">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="page-footer__menu-item page-footer__menu-item--made">
+                <a href="#">Производство печатных плат</a>
+              </li>
+              <li class="page-footer__menu-item page-footer__menu-item--contacts">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="page-footer__menu-item page-footer__menu-item--montage">
+                <a href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="page-footer__contacts page-footer__nav page-footer__nav--nojs page-footer__nav--opened">
+          <div class="page-footer__menu-inner page__inner">
+            <h2>Наш офис</h2>
+            <div class="page-footer__list page-footer__list--opened page-footer__list--nojs">
+              <p class="page-footer__contacts-address">г. Мытищи, Олимпийский проспект, д.10</p>
+              <a class="page-footer__contacts-phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              <a class="page-footer__contacts-phone" href="tel:+79250038767">+7 (925) 003-87-67</a>
+              <a class="page-footer__contacts-phone" href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
     <div class="page-footer__down container">
       <p class="page-footer__law">Все права защищены</p>
@@ -223,6 +225,7 @@
   <section class="modal">
     <div class="modal__content">
       <div class="modal__container page__inner">
+        <button class="modal__close" type="button" aria-label="Закрыть"></button>
         <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <form action="https://echo.htmlacademy.ru" method="POST">
@@ -234,7 +237,7 @@
             <label class="visually-hidden" for="modal-user-phone">Номер телефона</label>
             <input id="modal-user-phone" name="phone" type="tel" placeholder="Телефон" minlength="16" required>
           </div>
-          <textarea name="message" id="modal-message" placeholder="Ваш вопрос" required></textarea>
+          <textarea name="message" id="modal-message" placeholder="Ваш вопрос"></textarea>
           <div class="modal__form-inner">
             <button class="modal__button button form-button site-button" type="submit">Отправить</button>
             <div class="modal__checkbox form-checkbox">
@@ -243,7 +246,6 @@
             </div>
           </div>
         </form>
-        <button class="modal__close" type="button" aria-label="Закрыть"></button>
       </div>
     </div>
     <div class="modal__overlay"></div>

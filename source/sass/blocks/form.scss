@@ -13,12 +13,14 @@ form textarea {
   background-color: $input-back-color;
   color: $white-color;
   border: none;
+  border-radius: 0;
   outline: none;
 
   &::placeholder {
     color: $white-color;
   }
 
+  &:hover,
   &:focus {
     outline: 1px solid $white-color;
   }

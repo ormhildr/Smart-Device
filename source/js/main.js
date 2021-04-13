@@ -18,7 +18,7 @@ window.Modernizr.on(`webp`, function (result) {
 });
 
 document.querySelectorAll(`input[name=phone]`).forEach((e) => {
-  window.IMask(e, {mask: `+{7}(000)000-00-00`});
+  window.IMask(e, { mask: `+{7}(000)000-00-00` });
 });
 
 const openModal = () => {
@@ -32,7 +32,11 @@ const closeModal = () => {
 };
 
 if (modalWindow !== null && modalOpened !== null && modalClosed !== null && modalOverlay !== null) {
-  modalOpened.addEventListener(`click`, openModal);
+  modalOpened.addEventListener(`click`, (evt) => {
+    evt.preventDefault();
+    openModal();
+    modalWindow.querySelector(`input[name=name]`).focus();
+  });
   modalClosed.addEventListener(`click`, closeModal);
   modalOverlay.addEventListener(`click`, closeModal);
 
@@ -49,10 +53,20 @@ if (modalWindow !== null && modalOpened !== null && modalClosed !== null && moda
 if (footerMenu !== null && footerNavTitle !== null) {
   Array.from(footerMenu).forEach((el) => {
     el.classList.remove(`page-footer__list--nojs`);
+
+    if (el.classList.contains(`page-footer__list--opened`)) {
+      el.classList.remove(`page-footer__list--opened`);
+      el.classList.add(`page-footer__list--closed`);
+    }
   });
 
   Array.from(footerNavTitle).forEach((el) => {
     el.classList.remove(`page-footer__nav--nojs`);
+
+    if (el.classList.contains(`page-footer__nav--opened`)) {
+      el.classList.remove(`page-footer__nav--opened`);
+      el.classList.add(`page-footer__nav--closed`);
+    }
 
     el.addEventListener(`click`, () => {
       const openedList = document.querySelector(`.page-footer__list--opened`);
@@ -80,8 +94,7 @@ if (forms !== null) {
     const formPhone = el.querySelector(`input[name=phone]`);
     const formNMessage = el.querySelector(`textarea[name=message]`);
 
-    el.addEventListener(`submit`, (evt) => {
-      evt.preventDefault();
+    el.addEventListener(`submit`, () => {
       localStorage.setItem(`name`, formName.value);
       localStorage.setItem(`phone`, formPhone.value);
       localStorage.setItem(`message`, formNMessage.value);

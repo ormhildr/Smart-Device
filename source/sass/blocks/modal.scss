@@ -10,7 +10,6 @@
   position: fixed;
   width: 490px;
   margin: auto;
-  padding-top: 19px;
   padding-bottom: 35px;
   top: 137px;
   right: 0;
@@ -76,11 +75,13 @@
 }
 
 .modal__close {
+  display: block;
   padding: 0;
-  position: absolute;
-  top: 4px;
-  right: 10px;
+  position: relative;
   width: 18px;
+  height: 21px;
+  margin-left: 409px;
+  top: 13px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -90,8 +91,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: -6px;
-    left: 42px;
+    top: 0;
+    left: 8px;
     width: 2px;
     height: 21px;
     border-radius: 3px;

@@ -163,6 +163,12 @@
     padding-top: 21px;
     padding-left: 35px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $overlay-color;
+    transition-duration: 0.2s;
+  }
 }
 
 .services__link span {

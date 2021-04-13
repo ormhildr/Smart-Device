@@ -16,14 +16,14 @@
   display: grid;
   max-width: 83%;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(299px, 1fr);
+  grid-auto-rows: minmax(299px, auto);
   gap: 30px;
   margin: 0 auto;
 
   @media (max-width: $tablet-width-max) {
     max-width: 100%;
     grid-template-rows: 305px 232px;
-    grid-auto-rows: minmax(232px, 1fr);
+    grid-auto-rows: minmax(232px, auto);
   }
 
   @media (max-width: $mobile-width-max) {
@@ -37,6 +37,7 @@
   position: relative;
   padding-top: 98px;
   padding-right: 41px;
+  padding-bottom: 30px;
   padding-left: 45px;
   border: 1px solid $border-color;
   border-left: 3px solid $feedback-color;
