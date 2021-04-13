@@ -28,7 +28,7 @@
 .header-nav__list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 512px;
   margin-right: 56px;
 
   @media (max-width: $tablet-width-max) {
